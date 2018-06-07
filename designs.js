@@ -1,4 +1,5 @@
 
+var rows,columns;
 
 // createTable function with two arguments, row and col respectively 
 function createTable(row,col){
@@ -28,12 +29,17 @@ $('#pixelCanvas').prepend(table).show();
 
 //makeGrid
 function makeGrid() {
-// select user's height[column] and width[rows] from the form 
+
+// select the number of [columns] and [rows] from the form to be created
 rows = $('#inputWidth').val();
 columns = $('#inputHeight').val();
+
 //called createAble funcion with two parameters, rows and columns respectively
 createTable(rows,columns);
 
+// set the size of the table's row and colums
+$('tr').css('height',columns);
+$('td').css('width',rows);
 }
 
 
@@ -62,10 +68,8 @@ $('td').click(function(evt){
 })
 // cancel form submission after initial submission
 	event.preventDefault();
-     $('#inputHeight').val.replace(empty);
-     $('inputWidth').val.replace(empty);
+    
 })
-
 
 
 
