@@ -1,0 +1,70 @@
+body {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    background: #112E48;
+}
+
+h1 {
+    font-family: 'Megrim', cursive;
+    font-size: 70px;
+    margin: 0.2em;
+    color: #ccc;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+    color:#ffffff;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: -1px 0px 7px 4px rgba(255,255,255,1);
+    border: solid 3px transparent;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+    border: 1px solid #666;
+}
+
+input[type=number] {
+    width: 6em;
+}
+form{
+
+    color:#ffffff;
+}
+input[type=number] {
+    width: 6em;
+    border-radius: 5px;
+    height: 25px;
+    border: 1px solid #666;
+    padding: 5px 0 5px 5px;
+    background-color: transparent;
+    color: white;
+}
+input[type=submit]{
+    margin-left: 10px;
+    border: none;
+    padding: 10px;
+    width: 80px;
+    border-radius: 5px;
+    color: white;
+    background: #3BB75E;
+
+}
